@@ -1,8 +1,10 @@
 ## Project Description:
 
-This project creates a table from the top 100 most popular Js repositories on gitHub. The repositories are  fetched from  the [following](https://api.github.com/search/repositories?q=language:javascript&sort=stars&order=desc&per_page=100 "following") Api.
+This project creates a table from most popular stories on Hacker News. The stories are  fetched from  the [following](https://github.com/HackerNews/API) Api.
 
-The table loader component allows us to see 20 repositories  at a time  with its details, having the possibility to navigate through the table to see the rest of repositories fetched.
+The table loader component allows us to see 10 stories  at a time  with its details, having the possibility to see the details for a selected story.
+
+The project includes also a chart showing the scores for the 10 stories. The chart is created using [Uber react-vis](https://uber.github.io/react-vis/documentation/welcome-to-react-vis) library.
 
 ## Installing:
 
@@ -24,11 +26,11 @@ Check also npm is installed
 
 1. In target directory clone the repository from gitHub
 
-	` git clone https://github.com/manuelAlonsoPerez/repositories_viewer.git`
+	` git clone https://github.com/manuelAlonsoPerez/stories_viewer.git`
 
 2. Navigate to project folder
 
-	`cd repositories_viewer`
+	`cd stories_viewer`
 
 3. Install package
 
@@ -53,7 +55,4 @@ The  project is tested and working on Chrome, Firefox and Safari. API calls are 
 
 The store is connected to redux thunk middleware to add a more robust handling of async API calls. And is also connected  to redux-devtools for easier debugging.
 
-![](./src/assets/repos_viewer.png)
-
-
-
+![](./src/assets/main_view.png)
