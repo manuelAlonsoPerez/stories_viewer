@@ -2,7 +2,7 @@ table,th, td{
     border: 1px solid black;
 }
 
-.error-text, .loading-text, .header-cell, .story-cell, .buttons, .indexes{
+.error-text, .loading-text, .header-cell, .table-story-cell, .buttons, .indexes{
     font-family: Monserrat, sans-serif;
 }
 
@@ -31,30 +31,30 @@ table,th, td{
     font-weight: 600;
 }
 
-.story-cell{
+.table-story-cell{
     padding: 5px;
     margin: 0 auto;
     font-weight: 300;
 }
 
-.story-cell-icon{
+.table-story-cell-icon{
     margin: 0 auto;
 }
 
-.story-cell-name{
+.table-story-cell-name{
     width: 250px;
 }
 
-.story-cell-stats{
+.table-story-cell-stats{
     width: 7%;
 }
 
-.story-cell-description{
+.table-story-cell-description{
     text-align: left;
     padding-left: 10px;
 }
 
-.story-cell-name, .story-cell-url, .story-cell-stats{
+.table-story-cell-name, .table-story-cell-url, .table-story-cell-stats{
     text-align: center;
 }
 
@@ -62,6 +62,7 @@ table,th, td{
     display: flex;
     width:30%;
     margin: 10px auto;
+    text-decoration: none;
 }
 
 .button {
@@ -70,7 +71,7 @@ table,th, td{
     height: 50px;
     color: #FFF;
     border-radius: 10px;
-    background-color: rgb(31, 31, 121);
+    background-color: rgb(45, 84, 117);
     font-size: 1.3em;
     font-weight: 400;
 }

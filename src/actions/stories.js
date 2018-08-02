@@ -87,7 +87,7 @@ export function fetchDataTopStories(stories) {
         setTimeout(() => {
             dispatch(fetchDataTopStoriesSuccess(selectedStories));
             dispatch(storiesAreLoading(false));
-        }, 5000);
+        }, 2000);
     };
 }
 

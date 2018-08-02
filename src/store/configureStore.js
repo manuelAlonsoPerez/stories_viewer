@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, compose } from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react-redux/node_modules/redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from '../reducers';
 

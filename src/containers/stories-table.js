@@ -79,12 +79,12 @@ class StoriesTable extends Component {
             stories.map((story) => {
                 return (
                     <tr key={story.id}>
-                        <td className='story-cell story-cell-name'>{story.title}</td>
-                        <td className='story-cell'>{story.score}</td>
-                        <td className='story-cell'>{story.author}</td>
-                        <td className='story-cell'>{story.karma}</td>
-                        <td className='story-cell'>{story.time}</td>
-                        <td className='story-cell'>
+                        <td className='table-story-cell table-story-cell-name'>{story.title}</td>
+                        <td className='table-story-cell'>{story.score}</td>
+                        <td className='table-story-cell'>{story.author}</td>
+                        <td className='table-story-cell'>{story.karma}</td>
+                        <td className='table-story-cell'>{story.time}</td>
+                        <td className='table-story-cell'>
                             <Link
                                 className='main-buttons-container'
                                 to={{

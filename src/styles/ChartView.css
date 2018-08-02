@@ -28,9 +28,10 @@
 
 .chart-buttons-container{
     display: flex;
-    justify-content: flex-end;
     width:95%;
+    justify-content: flex-end;
     margin: 10px auto;
+    text-decoration: none;
 }
 
 .button-back{
@@ -39,7 +40,7 @@
     height: 50px;
     color: #FFF;
     border-radius: 10px;
-    background-color: rgb(31, 31, 121);
+    background-color: rgb(45, 84, 117);
     font-size: 1.3em;
     font-weight: 400;
 }
