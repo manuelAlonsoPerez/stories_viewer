@@ -4,9 +4,9 @@ import { fetchDataTopStories } from '../actions/stories';
 import { Link } from 'react-router-dom';
 import loading_icon from '../assets/loading.webp';
 
-import '../styles/StoryTable.css';
+import '../styles/StoriesTable.css';
 
-class storyTable extends Component {
+class StoriesTable extends Component {
 
     constructor(props) {
         super(props);
@@ -84,6 +84,23 @@ class storyTable extends Component {
                         <td className='story-cell'>{story.author}</td>
                         <td className='story-cell'>{story.karma}</td>
                         <td className='story-cell'>{story.time}</td>
+                        <td className='story-cell'>
+                            <Link
+                                className='main-buttons-container'
+                                to={{
+                                    pathname: '/details',
+                                    state: {
+                                        story: story
+                                    }
+                                }}
+                            >
+                                <button className='button button-details'>
+                                    details
+                                    <i className='right-arrow'>&#62;</i>
+                                </button>
+                            </Link>
+
+                        </td>
                     </tr >
                 );
             })
@@ -114,7 +131,7 @@ class storyTable extends Component {
                             <th className='header-cell'>Author</th>
                             <th className='header-cell'>Author´s Karma</th>
                             <th className='header-cell'>Date</th>
-
+                            <th className='header-cell'>Go to</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -130,7 +147,7 @@ class storyTable extends Component {
                         }
                     }}
                 >
-                    <button className='buttons'>
+                    <button className='button button-chart'>
                         Show chart
                     </button>
                 </Link>
@@ -154,4 +171,4 @@ const mapDispatchToProps = (dispatch) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(storyTable);
+export default connect(mapStateToProps, mapDispatchToProps)(StoriesTable);

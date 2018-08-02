@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PageHeader from '../components/page-header';
 import { XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, LineMarkSeries } from 'react-vis';
 
 import '../styles/ChartView.css';
 import '../../node_modules/react-vis/dist/style.css';
 
-export default class Chart extends Component {
+export default class ChartView extends Component {
 
     constructor(props) {
         super(props);
@@ -49,9 +50,7 @@ export default class Chart extends Component {
     render() {
         return (
             <div className='main-container'>
-                <header className='mainpage-header'>
-                    <h1 className='mainpage-title'>TOP STORIES </h1>
-                </header>
+                <PageHeader />
                 <div className='chart-container'
                     ref={(divElement) => this.divElement = divElement}
                     style={{ width: '70%', marginLeft: '15%', marginRight: '15%', height: '70vh', marginTop: '5vh' }}>
@@ -71,11 +70,11 @@ export default class Chart extends Component {
                     </XYPlot>
 
                     <Link
-                        className='main-buttons-container'
+                        className='chart-buttons-container'
                         to='/'
                         onClick={() => this.setSessionStorage(true)}
                     >
-                        <button className='buttons'>
+                        <button className='button-back'>
                             Back
                     </button>
                     </Link>

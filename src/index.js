@@ -4,9 +4,13 @@ import WebFont from 'webfontloader';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import configureStore from './store/configureStore';
-import Chart from './containers/chart-view';
-import MainView from './containers/main-view';
 import registerServiceWorker from './registerServiceWorker';
+
+import MainView from './containers/main-view';
+import ChartView from './containers/chart-view';
+import DetailsView from './containers/details-view';
+
+
 
 import './styles/Index.css';
 
@@ -25,7 +29,8 @@ ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
             <Switch>
-                <Route path='/chart' component={Chart} />
+                <Route path='/details' component={DetailsView} />
+                <Route path='/chart' component={ChartView} />
                 <Route path='/' component={MainView} />
             </Switch>
         </BrowserRouter>

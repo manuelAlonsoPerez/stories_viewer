@@ -4,20 +4,6 @@
     height: 100%;
 }
 
-.mainpage-header {
-    background-color: rgb(24, 62, 94);
-    height: 8vh;
-    padding: 2vh 0;
-    color: white;
-}
-
-.mainpage-title {
-    font-family: Montserrat, sans-serif;
-    font-size: 1.7em;
-    font-weight: 600;
-    text-align: center;
-  
-}
 
 .mainpage-description{
     font-family: Montserrat, sans-serif;
@@ -25,4 +11,3 @@
     font-weight: 400;
     text-align: center;
 }
-

@@ -69,6 +69,7 @@ export function fetchDataTopStories(stories) {
                 })
                 .then((response) => {
                     story.id = response.data.id;
+                    story.url = response.data.url;
                     story.title = response.data.title;
                     story.score = response.data.score;
                     story.author = response.data.by;

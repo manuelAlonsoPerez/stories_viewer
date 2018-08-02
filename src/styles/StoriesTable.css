@@ -54,19 +54,19 @@ table,th, td{
     padding-left: 10px;
 }
 
-.story-cell-name, .story-cell-url, .story-cell-stats, .indexes{
+.story-cell-name, .story-cell-url, .story-cell-stats{
     text-align: center;
 }
 
 .main-buttons-container{
     display: flex;
-    width:60%;
+    width:30%;
     margin: 10px auto;
 }
 
-.buttons{
+.button {
     display: inline-block;
-    width: 20%;
+    width: 200%;
     height: 50px;
     color: #FFF;
     border-radius: 10px;
@@ -75,10 +75,15 @@ table,th, td{
     font-weight: 400;
 }
 
-.indexes{
-    display: inline-block;
-    width: 20%;
-    margin: 10px auto;
-    font-size: 1.3em;
-    font-weight: 500;
+.button-details, .button-chart{
+    font-size: 20px;
 }
+
+.right-arrow{
+    padding-left: 10px;
+    font-size: '24px' ;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
