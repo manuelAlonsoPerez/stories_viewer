@@ -9,7 +9,6 @@ export default class PageHeader extends Component {
                 <header className='mainpage-header'>
                     <h1 className='mainpage-title'>TOP STORIES </h1>
                 </header>
-
             </div>
         );
     }

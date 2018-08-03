@@ -22,7 +22,6 @@ class DetailsView extends Component {
         const { story } = this.props.location.state;
         this.setState({ story });
         this.props.fetchFirstComments(story.id);
-
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -30,7 +29,6 @@ class DetailsView extends Component {
             this.props.fetchDataComments(this.props.comments);
         }
     }
-
 
     setSessionStorage(val) {
         sessionStorage.setItem('initiated', val);
@@ -54,7 +52,7 @@ class DetailsView extends Component {
             this.props.fullComments.map((fullComment) => {
                 const html = `<div>${fullComment.text}</div>`;
                 return (
-                    <div className='comment-main-container'>
+                    <div className='comment-main-container' key={fullComment.id}>
                         <div className='comment-headings'>
                             <div className='comment-heading-box'>
                                 <div className='comment-heading' >By:</div>
@@ -80,9 +78,7 @@ class DetailsView extends Component {
     }
 
     render() {
-
         const story = this.state.story;
-        // console.log(this.state.story);
 
         if (story !== null) {
             return (
@@ -111,7 +107,6 @@ class DetailsView extends Component {
                             <div className='story-cell'>Score:
                                 <div className='story-cell-content'>{story.score}</div>
                             </div>
-
                             <div className='story-cell'>Link:
                                 <a href={story.url} target="_blank" className='story-cell-content'>url</a>
                             </div>
@@ -138,7 +133,6 @@ class DetailsView extends Component {
         return (
             <div></div>
         );
-
     }
 }
 

@@ -2,9 +2,9 @@
 
 This project creates a table from most popular stories on Hacker News. The stories are  fetched from  the [following](https://github.com/HackerNews/API) Api.
 
-The table loader component allows us to see 10 stories  at a time  with its details, having the possibility to see the details for a selected story.
+The main-view component allows us to see 10 stories  at a time  with its details. Clicking on each story we have the posibility to see the details for a selected story and the first 10 comments.
 
-The project includes also a chart showing the scores for the 10 stories. The chart is created using [Uber react-vis](https://uber.github.io/react-vis/documentation/welcome-to-react-vis) library.
+The project includes also a chart showing the scores for the selected 10 stories. The chart is created using [Uber react-vis](https://uber.github.io/react-vis/documentation/welcome-to-react-vis) library.
 
 ## Installing:
 
@@ -51,8 +51,12 @@ Download  .zip, .tar, .tar.gz or .tar compressed package, decompress it to targe
 
 ## Status
 
-The  project is tested and working on Chrome, Firefox and Safari. API calls are resolved with axios, taking into account the time to resolve the promise and catching possible errors.
+The  project is tested and working on Chrome, Firefox and Safari. Loading icon works only on Chrome due to .webp format. API calls are resolved with axios, taking into account the time to resolve the promise and catching possible errors.
 
 The store is connected to redux thunk middleware to add a more robust handling of async API calls. And is also connected  to redux-devtools for easier debugging.
 
-![](./src/assets/main_view.png)
+![](./src/assets/main-view.png)
+![](./src/assets/details-view-1.png)
+![](./src/assets/details-view-2.png)
+![](./src/assets/details-view-3.png)
+![](./src/assets/chart-view.png)

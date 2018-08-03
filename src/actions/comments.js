@@ -51,7 +51,6 @@ export function fetchFirstComments(id) {
             })
             .then((response) => {
                 firstComments = response.data.kids;
-                console.log(firstComments);
                 if (firstComments.length > 10) {
                     firstComments = firstComments.slice(0, 10);
                 }
@@ -79,6 +78,7 @@ export function fetchDataComments(comments) {
                     return response;
                 })
                 .then((response) => {
+                    let id = response.data.id;
                     let text = response.data.text;
                     let date = convertTime(response.data.time);
                     let author = response.data.by;
@@ -88,26 +88,17 @@ export function fetchDataComments(comments) {
                             let authorComments = response.data.submitted.length;
                             return authorComments;
                         }).then((authorComments) => {
-                            commentsData.push({ text, date, author, authorComments });
+                            commentsData.push({ id, text, date, author, authorComments });
                         })
-
-
                 })
                 .catch(() => dispatch(commentsHaveError(true)));
             return comment;
-
         });
 
         setTimeout(() => {
-            console.log(commentsData);
             dispatch(commentsFetchFullDataSuccess(commentsData));
             dispatch(commentsAreLoading(false));
-        }, 2000);
-
-
+        }, 3000);
     }
-
-
-
 }
 

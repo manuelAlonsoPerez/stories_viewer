@@ -31,7 +31,6 @@ class MainPage extends Component {
                 </p>
                 <StoriesTable />
             </div>
-
         );
     }
 }

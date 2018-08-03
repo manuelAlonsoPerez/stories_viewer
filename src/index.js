@@ -10,8 +10,6 @@ import MainView from './containers/main-view';
 import ChartView from './containers/chart-view';
 import DetailsView from './containers/details-view';
 
-
-
 import './styles/Index.css';
 
 WebFont.load({
