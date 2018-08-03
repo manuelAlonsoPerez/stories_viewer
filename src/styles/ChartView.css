@@ -20,6 +20,14 @@
   
 }
 
+.chart-header-title{
+    font-family: Montserrat, sans-serif;
+    font-size: 1.3em;
+    margin-top: 15px;
+    font-weight: 400;
+    text-align: center; 
+}
+
 .chart-container{
     height: 100%;;
     width: 80%;

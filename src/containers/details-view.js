@@ -94,22 +94,24 @@ class DetailsView extends Component {
                             <div className='story-cell'>Title:
                                 <div className='story-cell-content'>{story.title}</div>
                             </div>
-                            <div className='story-cell'>Score:
-                                <div className='story-cell-content'>{story.score}</div>
+                            <div className='story-cell'>Date:
+                                <div className='story-cell-content'>{story.time}</div>
                             </div>
+
                         </div>
                         <div className='story-line'>
                             <div className='story-cell'>Author:
                                 <div className='story-cell-content'>{story.author}</div>
                             </div>
-                            <div className='story-cell'>Karma:
+                            <div className='story-cell'>Author's Karma:
                                 <div className='story-cell-content'>{story.karma}</div>
                             </div>
                         </div>
                         <div className='story-line'>
-                            <div className='story-cell'>Date:
-                                <div className='story-cell-content'>{story.time}</div>
+                            <div className='story-cell'>Score:
+                                <div className='story-cell-content'>{story.score}</div>
                             </div>
+
                             <div className='story-cell'>Link:
                                 <a href={story.url} target="_blank" className='story-cell-content'>url</a>
                             </div>

@@ -51,6 +51,7 @@ export default class ChartView extends Component {
         return (
             <div className='main-container'>
                 <PageHeader />
+                <div className='chart-header-title'>Scores for the 10 ramdomly selected stories</div>
                 <div className='chart-container'
                     ref={(divElement) => this.divElement = divElement}
                     style={{ width: '70%', marginLeft: '15%', marginRight: '15%', height: '70vh', marginTop: '5vh' }}>
@@ -75,7 +76,7 @@ export default class ChartView extends Component {
                         onClick={() => this.setSessionStorage(true)}
                     >
                         <button className='button-back'>
-                            Back
+                            &#60; Back to stories
                     </button>
                     </Link>
                 </div>

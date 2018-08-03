@@ -37,25 +37,8 @@ table,th, td{
     font-weight: 300;
 }
 
-.table-story-cell-icon{
-    margin: 0 auto;
-}
-
 .table-story-cell-name{
     width: 250px;
-}
-
-.table-story-cell-stats{
-    width: 7%;
-}
-
-.table-story-cell-description{
-    text-align: left;
-    padding-left: 10px;
-}
-
-.table-story-cell-name, .table-story-cell-url, .table-story-cell-stats{
-    text-align: center;
 }
 
 .main-buttons-container{
@@ -83,7 +66,6 @@ table,th, td{
 .right-arrow{
     padding-left: 10px;
     font-size: '24px' ;
-    font-weight: bold;
     font-style: normal;
 }
 
